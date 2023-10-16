@@ -1,6 +1,6 @@
 let tg = window.Telegram.WebApp;
 
-tg.expand();
+// tg.expand();
 
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
