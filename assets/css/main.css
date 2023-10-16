@@ -90,6 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-gap: 4px;
 }
 .content .item .action .btn {
   border: none;

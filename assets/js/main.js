@@ -46,6 +46,7 @@ document.querySelectorAll("label").forEach((eachLabelElem) =>
 let del = document.getElementById("delete");
 
 btn_1.addEventListener("click", function () {
+	this.css("background", "green");
 	tg.HapticFeedback.impactOccurred("heavy");
 
 	del.style.display = "";
