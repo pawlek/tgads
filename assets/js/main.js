@@ -19,7 +19,6 @@ for (var i = 0; i < item.length; i++) {
 }
 
 tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
-tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
 
 btn.addEventListener("click", function () {
 	//вешаем событие на нажатие html-кнопки
