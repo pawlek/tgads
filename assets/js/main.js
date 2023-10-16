@@ -23,7 +23,8 @@ tg.MainButton.textColor = "#737373"; //изменяем цвет текста к
 tg.MainButton.color = "#A8A8A8";
 
 btn_1.addEventListener("click", function () {
-	//вешаем событие на нажатие html-кнопки
+	tg.HapticFeedback.impactOccurred("heavy");
+
 	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
 		tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
 		tg.MainButton.color = "#00A3FF";
