@@ -36,6 +36,9 @@
   overflow-x: scroll;
   width: 100%;
 }
+.header .menu .inner::-webkit-scrollbar {
+  display: none;
+}
 .header .menu .inner .cat_item {
   display: flex;
   justify-content: center;

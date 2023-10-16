@@ -35,6 +35,10 @@
 			overflow-x: scroll;
 			width: 100%;
 
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
 			.cat_item {
 				display: flex;
 				justify-content: center;
