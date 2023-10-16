@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: var(--tg-theme-text-color);
 }
 * a {
   text-decoration: none;
@@ -15,17 +16,32 @@
 
 .content {
   border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
 }
 .content .item {
   border: 1px solid blue;
   padding: 10px;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
 }
 .content .item img {
+  display: block;
+  align-self: center;
+  justify-self: center;
   height: 56px;
   width: 56px;
 }
 .content .item h2 {
   font-weight: bold;
+  font-size: 20px;
 }
 .content .item .btn {
   border: none;
