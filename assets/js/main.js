@@ -67,7 +67,10 @@ del.addEventListener("click", function () {
 	del.style.display = "none";
 
 	if (tg.MainButton.isVisible && tg.MainButton.isActive) {
-		tg.MainButton.hide();
+		tg.MainButton.text = "Select any package"; //изменяем текст кнопки
+		tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
+		tg.MainButton.color = "#A8A8A8";
+		tg.MainButton.disable();
 	} else {
 		tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
 		tg.MainButton.color = "#00A3FF";
