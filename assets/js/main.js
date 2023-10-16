@@ -26,7 +26,7 @@ tg.MainButton.setParams({ color: "#143F6B" }); //так изменяются в�
 
 btn.addEventListener("click", function () {
 	//вешаем событие на нажатие html-кнопки
-	if (tg.MainButton.isVisible && !tg.MainButton.isVisible) {
+	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
 		tg.MainButton.enable();
 	} else {
 		//иначе
