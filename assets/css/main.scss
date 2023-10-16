@@ -12,8 +12,6 @@
 }
 
 .header {
-	border: 1px solid red;
-
 	.menu {
 		display: inline-flex;
 		height: 40px;
@@ -24,7 +22,6 @@
 		// overflow: hidden;
 
 		.inner {
-			border: 1px solid blue;
 			display: inline-flex;
 			height: 100%;
 			align-items: center;

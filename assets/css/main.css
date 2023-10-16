@@ -23,7 +23,6 @@
   position: relative;
 }
 .header .menu .inner {
-  border: 1px solid blue;
   display: inline-flex;
   height: 100%;
   align-items: center;
