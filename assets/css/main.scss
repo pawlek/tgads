@@ -31,8 +31,8 @@
 			align-items: center;
 			grid-template-rows: 1fr;
 			grid-gap: 8px;
-			overflow: auto;
-			white-space: nowrap;
+			overflow-x: scroll;
+			width: 100%;
 
 			.cat_item {
 				display: flex;
