@@ -23,7 +23,7 @@
   grid-gap: 16px;
 }
 .content .item {
-  padding: 10px;
+  padding: 8px;
   align-self: center;
   justify-self: center;
   display: grid;
