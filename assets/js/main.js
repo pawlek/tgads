@@ -5,15 +5,12 @@ tg.expand();
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
 
-let item = document.getElementsByClassName("item");
+heightOutput.textContent = window.innerHeight;
+widthOutput.textContent = window.innerWidth / 2;
 
-item.style.width = "100px";
-item.style.height = "100px";
+let item = document.querySelectorAll(".item");
 
-function updateSize() {
-	heightOutput.textContent = window.innerHeight;
-	widthOutput.textContent = window.innerWidth;
+for (var i = 0; i < item.length; i++) {
+	item[i].style.width = "200px";
+	item[i].style.height = "200px";
 }
-
-updateSize();
-window.addEventListener("resize", updateSize);
