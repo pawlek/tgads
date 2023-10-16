@@ -7,14 +7,12 @@ const widthOutput = document.querySelector("#width");
 
 let item = document.getElementsByClassName("item");
 
-item.style.width = '100px';
-item.style.height = '100px';
-
-let content_width = window.innerWidth;
+item.style.width = "100px";
+item.style.height = "100px";
 
 function updateSize() {
-  heightOutput.textContent = window.innerHeight;
-  widthOutput.textContent = window.innerWidth;
+	heightOutput.textContent = window.innerHeight;
+	widthOutput.textContent = window.innerWidth;
 }
 
 updateSize();
