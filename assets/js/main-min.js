@@ -1,1 +1,1 @@
-let tg=window.Telegram.WebApp;tg.expand();
+let tg=window.Telegram.WebApp;tg.expand();const heightOutput=document.querySelector("#height"),widthOutput=document.querySelector("#width");let item=document.getElementsByClassName("item");item.style.width="100px",item.style.height="100px";let content_width=window.innerWidth;function updateSize(){heightOutput.textContent=window.innerHeight,widthOutput.textContent=window.innerWidth}updateSize(),window.addEventListener("resize",updateSize);
