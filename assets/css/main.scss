@@ -13,7 +13,6 @@
 
 .header {
 	overflow: hidden;
-	border: 1px solid red;
 	.menu {
 		display: inline-flex;
 		height: 40px;
@@ -22,11 +21,9 @@
 		grid-gap: 8px;
 		position: relative;
 		overflow: hidden;
-		border: 1px solid blue;
 		width: 100%;
 
 		.inner {
-			border: 1px solid green;
 			display: inline-flex;
 			height: 100%;
 			align-items: center;
