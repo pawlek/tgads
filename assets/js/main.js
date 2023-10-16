@@ -37,7 +37,8 @@ btn_1.addEventListener("click", function () {
 });
 
 document.querySelectorAll("label").forEach((eachLabelElem) =>
-	eachLabelElem.addEventListener("click", function () {
+	eachLabelElem.addEventListener("click", function (event) {
+		event.stopPropagation();
 		tg.HapticFeedback.impactOccurred("heavy");
 	})
 );
