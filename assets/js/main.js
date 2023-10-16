@@ -35,3 +35,23 @@ btn_1.addEventListener("click", function () {
 		tg.MainButton.show(); //показываем
 	}
 });
+
+document.querySelectorAll("label").forEach((eachLabelElem) =>
+	eachLabelElem.addEventListener("click", function () {
+		tg.HapticFeedback.impactOccurred("heavy");
+	})
+);
+
+btn_1.addEventListener("click", function () {
+	tg.HapticFeedback.impactOccurred("heavy");
+
+	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
+		tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
+		tg.MainButton.color = "#00A3FF";
+		tg.MainButton.setText("Next");
+		tg.MainButton.enable();
+	} else {
+		//иначе
+		tg.MainButton.show(); //показываем
+	}
+});

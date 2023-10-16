@@ -16,27 +16,61 @@
 
 	.menu {
 		display: inline-flex;
-		max-height: 40px;
+		height: 40px;
 		align-items: center;
 		padding: 4px;
 		grid-gap: 8px;
+		position: relative;
+		// overflow: hidden;
 
 		.inner {
+			border: 1px solid blue;
 			display: inline-flex;
+			height: 100%;
+			align-items: center;
+			grid-template-rows: 1fr;
 			grid-gap: 8px;
-			.checkbox {
-				background: red;
-				padding: 4px 8px;
-				border-radius: 8px;
 
-				input {
-					opacity: 1;
+			.cat_item {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				input[type="checkbox"] {
+					opacity: 0;
 					position: absolute;
 				}
+				label {
+					background: gray;
+					color: #fff;
+					padding: 4px 8px;
+					border-radius: 8px;
+				}
+
+				input[type="checkbox"]:checked + label {
+					background: green;
+				}
 			}
+
+			// 	.item {
+			// 		border: 1px solid green;
+			// 		display: grid;
+			// 		height: 100%;
+
+			// 		.checkbox {
+			// 			background: blue;
+			// 			padding: 4px 8px;
+			// 			border-radius: 8px;
+			// 		}
+			// 		input[type="checkbox"] {
+			// 			opacity: 1;
+			// 			// position: absolute;
+			// 		}
+			// 	}
 		}
 	}
 }
+
 .content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
