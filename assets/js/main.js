@@ -31,10 +31,6 @@ document.querySelectorAll("label").forEach((eachLabelElem) =>
 
 let del = document.getElementById("delete");
 
-function disable(e) {
-	e.color = "#A8A8A8";
-}
-
 btn_1.addEventListener("click", function () {
 	disable(this);
 
@@ -70,3 +66,8 @@ del.addEventListener("click", function () {
 		tg.MainButton.enable();
 	}
 });
+
+function disable(e) {
+	e.color = "#A8A8A8";
+	e.disable();
+}
