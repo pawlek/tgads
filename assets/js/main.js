@@ -45,8 +45,12 @@ document.querySelectorAll("label").forEach((eachLabelElem) =>
 
 let del = document.getElementById("delete");
 
+function disable(e) {
+	e.color = "#A8A8A8";
+}
+
 btn_1.addEventListener("click", function () {
-	btn_1.color = "#A8A8A8";
+	disable(this);
 
 	tg.HapticFeedback.impactOccurred("heavy");
 
