@@ -20,7 +20,7 @@ for (var i = 0; i < item.length; i++) {
 
 tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
 
-btn.addEventListener("click", function () {
+btn_1.addEventListener("click", function () {
 	//вешаем событие на нажатие html-кнопки
 	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
 		tg.MainButton.enable();
