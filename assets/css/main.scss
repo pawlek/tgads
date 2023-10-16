@@ -1,6 +1,9 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-user-select: none; /* Сафари */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none;
 
 	a {
 		text-decoration: none;

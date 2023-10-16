@@ -1,6 +1,10 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none; /* Сафари */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
   color: var(--tg-theme-text-color);
 }
 * a {
