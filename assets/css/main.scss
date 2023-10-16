@@ -22,8 +22,10 @@
 		grid-gap: 8px;
 		position: relative;
 		overflow: hidden;
+		border: 1px solid blue;
 
 		.inner {
+			border: 1px solid green;
 			display: inline-flex;
 			height: 100%;
 			align-items: center;
