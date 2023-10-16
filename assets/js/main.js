@@ -32,7 +32,7 @@ document.querySelectorAll("label").forEach((eachLabelElem) =>
 let del = document.getElementById("delete");
 
 btn_1.addEventListener("click", function () {
-	btn_1.style = "background: red;";
+	btn_1.style = "background: #A8A8A8;";
 
 	tg.HapticFeedback.impactOccurred("heavy");
 
@@ -53,6 +53,7 @@ del.addEventListener("click", function () {
 	tg.HapticFeedback.impactOccurred("heavy");
 
 	del.style.display = "none";
+	btn_1.style = tg.ThemeParams.button_color;
 
 	if (tg.MainButton.isVisible && tg.MainButton.isActive) {
 		tg.MainButton.text = "Select any package"; //изменяем текст кнопки
