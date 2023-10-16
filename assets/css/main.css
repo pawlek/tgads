@@ -32,7 +32,8 @@
   align-items: center;
   grid-template-rows: 1fr;
   grid-gap: 8px;
-  overflow-y: scroll;
+  overflow: auto;
+  white-space: nowrap;
 }
 .header .menu .inner .cat_item {
   display: flex;
