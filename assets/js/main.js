@@ -22,20 +22,6 @@ tg.MainButton.text = "Select any package"; //изменяем текст кно�
 tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
 tg.MainButton.color = "#A8A8A8";
 
-btn_1.addEventListener("click", function () {
-	tg.HapticFeedback.impactOccurred("heavy");
-
-	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
-		tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
-		tg.MainButton.color = "#00A3FF";
-		tg.MainButton.setText("Next");
-		tg.MainButton.enable();
-	} else {
-		//иначе
-		tg.MainButton.show(); //показываем
-	}
-});
-
 document.querySelectorAll("label").forEach((eachLabelElem) =>
 	eachLabelElem.addEventListener("click", function (event) {
 		event.stopPropagation();
