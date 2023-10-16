@@ -68,5 +68,5 @@ del.addEventListener("click", function () {
 });
 
 function disable(e) {
-	e.color = "#A8A8A8";
+	e.css("background", "#A8A8A8");
 }
