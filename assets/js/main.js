@@ -60,3 +60,18 @@ btn_1.addEventListener("click", function () {
 		tg.MainButton.show(); //показываем
 	}
 });
+
+del.addEventListener("click", function () {
+	tg.HapticFeedback.impactOccurred("heavy");
+
+	del.style.display = "none";
+
+	if (tg.MainButton.isVisible && tg.MainButton.isActive) {
+		tg.MainButton.hide();
+	} else {
+		tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
+		tg.MainButton.color = "#00A3FF";
+		tg.MainButton.setText("Next");
+		tg.MainButton.enable();
+	}
+});
