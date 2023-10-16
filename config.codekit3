@@ -36,6 +36,30 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/img\/telegram.png" : {
+      "ft" : 32768,
+      "iS" : 20849,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/telegram.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/js\/main-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/main-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/js\/main.js" : {
       "bF" : 0,
       "ft" : 64,
