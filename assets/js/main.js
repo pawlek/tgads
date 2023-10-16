@@ -43,8 +43,12 @@ document.querySelectorAll("label").forEach((eachLabelElem) =>
 	})
 );
 
+let del = document.getElementById("delete");
+
 btn_1.addEventListener("click", function () {
 	tg.HapticFeedback.impactOccurred("heavy");
+
+	del.style.display = "";
 
 	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
 		tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки

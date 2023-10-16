@@ -86,11 +86,20 @@
   font-weight: bold;
   font-size: 20px;
 }
-.content .item .btn {
+.content .item .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .item .action .btn {
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: bold;
   background: var(--tg-theme-button-color);
   color: var(--tg-theme-button-text-color);
+}
+.content .item .action .btn.del {
+  background: red;
+  color: #fff;
 }
