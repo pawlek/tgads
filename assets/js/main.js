@@ -19,6 +19,8 @@ for (var i = 0; i < item.length; i++) {
 }
 
 tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
+tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
+tg.MainButton.color = "#A8A8A8";
 
 btn_1.addEventListener("click", function () {
 	//вешаем событие на нажатие html-кнопки
