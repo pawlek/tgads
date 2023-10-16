@@ -11,9 +11,6 @@
   text-decoration: none;
 }
 
-.header {
-  border: 1px solid red;
-}
 .header .menu {
   display: inline-flex;
   height: 40px;
