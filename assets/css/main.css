@@ -16,6 +16,23 @@
 }
 .header .menu {
   display: inline-flex;
+  max-height: 40px;
+  align-items: center;
+  padding: 4px;
+  grid-gap: 8px;
+}
+.header .menu .inner {
+  display: inline-flex;
+  grid-gap: 8px;
+}
+.header .menu .inner .checkbox {
+  background: red;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.header .menu .inner .checkbox input {
+  opacity: 1;
+  position: absolute;
 }
 
 .content {
