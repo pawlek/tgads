@@ -25,10 +25,10 @@ tg.MainButton.color = "#A8A8A8";
 btn_1.addEventListener("click", function () {
 	//вешаем событие на нажатие html-кнопки
 	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
-		tg.MainButton.enable();
 		tg.MainButton.textColor = tg.ThemeParams.button_text_colorString; //изменяем цвет текста кнопки
 		tg.MainButton.color = tg.ThemeParams.button_color;
 		tg.MainButton.setText("Next");
+		tg.MainButton.enable();
 	} else {
 		//иначе
 		tg.MainButton.show(); //показываем
