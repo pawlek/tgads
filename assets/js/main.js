@@ -20,14 +20,12 @@ for (var i = 0; i < item.length; i++) {
 
 tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
 tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
-tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
-tg.MainButton.setParams({ color: "#143F6B" }); //так изменяются все параметры
 
 btn.addEventListener("click", function () {
 	//вешаем событие на нажатие html-кнопки
 	if (tg.MainButton.isVisible && !tg.MainButton.isActive) {
 		tg.MainButton.enable();
+		tg.MainButton.setText("Next");
 	} else {
 		//иначе
 		tg.MainButton.show(); //показываем
