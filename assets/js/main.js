@@ -32,7 +32,7 @@ document.querySelectorAll("label").forEach((eachLabelElem) =>
 let del = document.getElementById("delete");
 
 btn_1.addEventListener("click", function () {
-	disable(this);
+	btn_1.style = "background: red;";
 
 	tg.HapticFeedback.impactOccurred("heavy");
 
@@ -66,7 +66,3 @@ del.addEventListener("click", function () {
 		tg.MainButton.enable();
 	}
 });
-
-function disable(e) {
-	e.css("background", "#A8A8A8");
-}
