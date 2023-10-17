@@ -17,11 +17,13 @@
 	grid-gap: 8px;
 
 	.header {
-		overflow: hidden;
 		display: grid;
 		grid-gap: 8px;
 
 		.menu {
+			width: 100%;
+			overflow: hidden;
+
 			.category {
 				display: inline-flex;
 				height: 40px;

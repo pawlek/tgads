@@ -17,9 +17,12 @@
   grid-gap: 8px;
 }
 .container .header {
-  overflow: hidden;
   display: grid;
   grid-gap: 8px;
+}
+.container .header .menu {
+  width: 100%;
+  overflow: hidden;
 }
 .container .header .menu .category {
   display: inline-flex;
