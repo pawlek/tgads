@@ -1,3 +1,41 @@
+var wavesurfer = WaveSurfer.create({
+	container: ".waveform",
+	waveColor: "#D9D9D9",
+	progressColor: "#A1A0A0",
+	height: 48,
+	responsive: true,
+	hideScrollbar: true,
+	cursorColor: "#444444",
+	cursorWidth: 2,
+	barWidth: 4,
+	barHeight: 0.7,
+	barGap: 3,
+	skipLength: 5,
+	barRadius: 100,
+	autoplay: true,
+	dragToSeek: true,
+});
+
+wavesurfer.load("../../music.mp3");
+
+wavesurfer.on("interaction", () => {
+	wavesurfer.play();
+});
+
+const playPauseButton = document.getElementById("play-pause-button");
+let isPlaying = false;
+
+playPauseButton.addEventListener("click", () => {
+	if (isPlaying) {
+		wavesurfer.pause();
+		playPauseButton.innerHTML = '<div class="play"></div>';
+	} else {
+		wavesurfer.play();
+		playPauseButton.innerHTML = '<div class="pause"> </div>';
+	}
+	isPlaying = !isPlaying;
+});
+
 let tg = window.Telegram.WebApp;
 
 // tg.expand();
