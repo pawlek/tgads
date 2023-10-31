@@ -19,7 +19,7 @@ for (var i = 0; i < item.length; i++) {
 }
 
 let user = document.getElementById(".user");
-user.innerText = "test";
+user.textContent = "test";
 
 tg.MainButton.text = "Select any package"; //изменяем текст кнопки
 tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
