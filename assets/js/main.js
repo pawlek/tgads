@@ -18,7 +18,7 @@ for (var i = 0; i < item.length; i++) {
 	item[i].style.height = (window.innerWidth - margin * 3) / 2 + "px";
 }
 
-let user = document.querySelectorAll(".user");
+let user = document.getElementById(".user");
 user.innerText = "test";
 
 tg.MainButton.text = "Select any package"; //изменяем текст кнопки
