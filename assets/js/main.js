@@ -21,6 +21,13 @@ for (var i = 0; i < item.length; i++) {
 let user = document.querySelectorAll(".user");
 user.innerText = tg.initDataUnsafe.user.first_name;
 
+let profName = document.createElement("p"); //создаем параграф
+profName.innerText = `${tg.initDataUnsafe.user.first_name}
+${tg.initDataUnsafe.user.last_name}
+${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
+//выдем имя, "фамилию", через тире username и код языка
+user.appendChild(profName); //добавляем
+
 tg.MainButton.text = "Select any package"; //изменяем текст кнопки
 tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
 tg.MainButton.color = "#A8A8A8";
