@@ -18,6 +18,9 @@ for (var i = 0; i < item.length; i++) {
 	item[i].style.height = (window.innerWidth - margin * 3) / 2 + "px";
 }
 
+let user = document.querySelectorAll(".user");
+user.innerText = tg.initDataUnsafe.user.first_name;
+
 tg.MainButton.text = "Select any package"; //изменяем текст кнопки
 tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
 tg.MainButton.color = "#A8A8A8";

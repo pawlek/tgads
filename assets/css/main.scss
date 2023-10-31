@@ -16,6 +16,12 @@
 	display: grid;
 	grid-gap: 8px;
 
+	.user {
+		border: 1px solid red;
+		height: 100px;
+		width: 100%;
+	}
+
 	.header {
 		display: grid;
 		grid-gap: 8px;
