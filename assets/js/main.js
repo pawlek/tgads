@@ -56,9 +56,8 @@ let userid = document.createElement("p"); // Используем document.creat
 userid.textContent = `${tg.initDataUnsafe.user.id}`; // Отображаем id пользователя
 usercard.appendChild(userid);
 
-var receiver = ctx.getChat();
-var receiver1 = ctx.getChat;
-usercard.appendChild('receiver: ' + receiver + receiver1);
+var receiver = Window.Telegram.WebApp.WebAppUser.username;
+usercard.appendChild('receiver: ' + receiver);
 
 // let db = document.createElement("div");
 // userid.textContent = `${data}`;
