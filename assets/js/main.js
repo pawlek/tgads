@@ -56,7 +56,7 @@ let userid = document.createElement("p"); // Используем document.creat
 userid.textContent = `${tg.initDataUnsafe.user.id}`; // Отображаем id пользователя
 usercard.appendChild(userid);
 
-var receiver = `${tg.initDataUnsafe.receiver.username}`;
+var receiver = `${tg.initDataUnsafe.user.photo_url}`;
 usercard.appendChild('receiver: ' + receiver);
 
 // let db = document.createElement("div");
