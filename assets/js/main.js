@@ -48,7 +48,7 @@ let usercard = document.getElementById("user"); //Используем getElemen
 let profileName = document.createElement("p"); //При помощи document.createElement делаем абзац – <p> </p>
 profileName.textContent = `${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}
-   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
+   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code}) ${window.Telegram.WebApp.WebAppUser.username}`;
 //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
 
 usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
@@ -56,8 +56,6 @@ let userid = document.createElement("p"); // Используем document.creat
 userid.textContent = `${tg.initDataUnsafe.user.id}`; // Отображаем id пользователя
 usercard.appendChild(userid);
 
-var receiver = window.Telegram.WebApp.WebAppUser.username;
-usercard.appendChild("receiver: " + receiver);
 
 // let db = document.createElement("div");
 // userid.textContent = `${data}`;
