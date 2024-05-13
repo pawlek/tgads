@@ -25,7 +25,7 @@ const useData = async () => {
 
 let tg = window.Telegram.WebApp;
 
-// tg.expand();
+tg.expand();
 
 tg.MainButton.show();
 tg.MainButton.disable();
