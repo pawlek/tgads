@@ -1,27 +1,27 @@
-import { createClient } from "@supabase/supabase-js";
+// import { createClient } from "@supabase/supabase-js";
 
-// Create a single supabase client for interacting with your database
-const supabase = createClient(
-	"https://egdnihszitodycuzhomd.supabase.co",
-	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVnZG5paHN6aXRvZHljdXpob21kIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTg0OTU0ODAsImV4cCI6MjAxNDA3MTQ4MH0.aLWDlUQFM6IGqa1CTPcmV1EHD_C0xbA15OTkrX7v_Nk"
-);
+// // Create a single supabase client for interacting with your database
+// const supabase = createClient(
+// 	"https://egdnihszitodycuzhomd.supabase.co",
+// 	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVnZG5paHN6aXRvZHljdXpob21kIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTg0OTU0ODAsImV4cCI6MjAxNDA3MTQ4MH0.aLWDlUQFM6IGqa1CTPcmV1EHD_C0xbA15OTkrX7v_Nk"
+// );
 
-const useData = async () => {
-	const { data, error } = await supabase.from("users").select(); // gets the data from supabase
+// const useData = async () => {
+// 	const { data, error } = await supabase.from("users").select(); // gets the data from supabase
 
-	let html = "";
+// 	let html = "";
 
-	data.forEach((blog) => {
-		html += `
-	  <div data-id="${blog.id}">
-		<h1 class="text-2xl">${blog.title}</h1>
-		<p>${blog.content}</p>
-	  </div>
-	  `;
-	});
+// 	data.forEach((blog) => {
+// 		html += `
+// 	  <div data-id="${blog.id}">
+// 		<h1 class="text-2xl">${blog.title}</h1>
+// 		<p>${blog.content}</p>
+// 	  </div>
+// 	  `;
+// 	});
 
-	blogsContainer.innerHTML = html;
-};
+// 	blogsContainer.innerHTML = html;
+// };
 
 let tg = window.Telegram.WebApp;
 
@@ -50,14 +50,15 @@ profileName.textContent = `${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}
    ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
 //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
+
 usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
 let userid = document.createElement("p"); // Используем document.createElement для создания еще одного абзаца
 userid.textContent = `${tg.initDataUnsafe.user.id}`; // Отображаем id пользователя
 usercard.appendChild(userid);
 
-let db = document.createElement("div");
-userid.textContent = `${data}`;
-usercard.appendChild(db);
+// let db = document.createElement("div");
+// userid.textContent = `${data}`;
+// usercard.appendChild(db);
 
 tg.MainButton.text = "Select any package"; //изменяем текст кнопки
 tg.MainButton.textColor = "#737373"; //изменяем цвет текста кнопки
