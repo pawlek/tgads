@@ -98,6 +98,7 @@ btn_1.addEventListener("click", function () {
 
 del.addEventListener("click", function () {
 	tg.HapticFeedback.impactOccurred("heavy");
+	tg.MainButton.setText("ololo");
 
 	del.style.display = "none";
 	btn_1.style = tg.ThemeParams.button_color;
