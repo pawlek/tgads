@@ -30,9 +30,7 @@ tg.expand();
 tg.MainButton.show();
 tg.MainButton.disable();
 
-tg.onEvent('mainButtonClicked',  function () {
-	tg.MainButton.setText("LOL");
-});
+
 
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
@@ -40,12 +38,17 @@ const widthOutput = document.querySelector("#width");
 heightOutput.textContent = window.innerHeight;
 widthOutput.textContent = window.innerWidth;
 
-let item = document.querySelectorAll(".item");
+let item = document.querySelectorAll(".item h2");
 let margin = 32;
 for (var i = 0; i < item.length; i++) {
 	item[i].style.width = (window.innerWidth - margin * 3) / 2 + "px";
 	item[i].style.height = (window.innerWidth - margin * 3) / 2 + "px";
 }
+
+tg.onEvent('mainButtonClicked',  function () {
+	
+	tg.MainButton.setText(item);
+});
 
 let usercard = document.getElementById("user"); //Используем getElementById, чтобы получить карточку пользователя
 
