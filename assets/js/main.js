@@ -47,7 +47,9 @@ for (var i = 0; i < item.length; i++) {
 
 tg.onEvent('mainButtonClicked',  function () {
 	
-	tg.MainButton.setText(item);
+	tg.showAlert(item, function(){
+		tg.MainButton.setText(item);
+	})
 });
 
 let usercard = document.getElementById("user"); //Используем getElementById, чтобы получить карточку пользователя
