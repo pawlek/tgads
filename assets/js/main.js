@@ -30,6 +30,10 @@ tg.expand();
 tg.MainButton.show();
 tg.MainButton.disable();
 
+tg.onEvent('mainButtonClicked',  function () {
+	tg.MainButton.setText("LOL");
+});
+
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
 
