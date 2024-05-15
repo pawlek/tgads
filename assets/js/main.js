@@ -30,9 +30,7 @@ tg.expand();
 tg.MainButton.show();
 tg.MainButton.disable();
 
-tg.themeParams.bg_color = "#444";
-
-
+tg.themeParams.bg_color = "#444444";
 
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
@@ -47,11 +45,10 @@ for (var i = 0; i < item.length; i++) {
 	item[i].style.height = (window.innerWidth - margin * 3) / 2 + "px";
 }
 
-tg.onEvent('mainButtonClicked',  function () {
-	
-	tg.showAlert(item, function(){
+tg.onEvent("mainButtonClicked", function () {
+	tg.showAlert(item, function () {
 		tg.MainButton.setText(item);
-	})
+	});
 });
 
 let usercard = document.getElementById("user"); //Используем getElementById, чтобы получить карточку пользователя
@@ -59,14 +56,17 @@ let usercard = document.getElementById("user"); //Используем getElemen
 let profileName = document.createElement("p"); //При помощи document.createElement делаем абзац – <p> </p>
 profileName.textContent = `${tg.initDataUnsafe.user.first_name}
    ${tg.initDataUnsafe.user.last_name}
-   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code}) ${JSON.stringify(window.Telegram.WebApp.initDataUnsafe.receiver, null, 2)}`;
+   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code}) ${JSON.stringify(
+	window.Telegram.WebApp.initDataUnsafe.receiver,
+	null,
+	2
+)}`;
 //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
 
 usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
 let userid = document.createElement("p"); // Используем document.createElement для создания еще одного абзаца
 userid.textContent = `${tg.initDataUnsafe.user.id}`; // Отображаем id пользователя
 usercard.appendChild(userid);
-
 
 // let db = document.createElement("div");
 // userid.textContent = `${data}`;
