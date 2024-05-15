@@ -31,6 +31,8 @@ tg.MainButton.show();
 tg.MainButton.disable();
 
 tg.themeParams.bg_color = "#444444";
+tg.themeParams.secondary_bg_color = "#444444";
+
 
 const heightOutput = document.querySelector("#height");
 const widthOutput = document.querySelector("#width");
